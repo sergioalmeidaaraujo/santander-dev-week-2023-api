@@ -20,6 +20,8 @@ public class User {
 
     private String name;
 
+    private Long CPF;
+
     @OneToOne(cascade = CascadeType.ALL)
     private Account account;
     
@@ -38,6 +40,14 @@ public class User {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getCPF() {
+        return CPF;
+    }
+
+    public void setCPF(Long CPF) {
+        this.id = CPF;
     }
 
     public String getName() {
